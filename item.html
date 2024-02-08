@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="chortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Montserrat:wght@600&family=Nunito+Sans:opsz,wght@6..12,200&display=swap"
+        rel="stylesheet">
+    <title id="title">Tuc-c-cano</title>
+</head>
+
+<body id="body">
+    <div id="wrapper">
+        <div id="content">
+            <header class="menu">
+                <a href="index.html"><img src="img/favicon-bw.png" alt="logo" id="logo"></a>
+                <form>
+                    <input id="nbr" type="text" placeholder="Enter your EAN-13">
+                    <button id="ean13" type="button" onclick="archive()"></button>
+                </form>
+                <p class="error"></p>
+                <img src="img/newsletter.png" alt="logo">
+            </header>
+            <main class="hero2">
+                <section class="item">
+                    <img id="imgItem" src="img/krisp.jpg" alt="imgItem">
+                    <img src="img/Nutri-score-A.svg" alt="" id="nutriScore">
+                </section>
+                <section class="description">
+                    <div class="title">
+                        <h3 id="name">Lorrreeem Ipssssum</h3>
+                    </div>
+                    <div class="specs">
+                        <p><strong>Barcode: </strong><span id="barcode"></span></p>
+                        <p><strong id="commonTwo">Common name: </strong><span id="common"></span></p>
+                        <p><strong>Quantity: </strong><span id="quantity"></span></p>
+                        <p><strong>Packaging: </strong><span id="packaging"></span></p>
+                        <p><strong>Brands: </strong><span id="brands"></span></p>
+                        <p><strong>Categories: </strong><span id="categories"></span></p>
+                        <p><strong>Labels, certifications, awards: </strong><span id="labels"></span></p>
+                        <p><strong>Link to the product page on the official site of the producer: </strong><span id="link"></span></p>
+                        <p><strong></strong><span id="result"></span></p>
+                    </div>
+                </section>
+            </main>
+            <footer class="foo">
+                <img data-lag=".2" src="img/favicon.png" alt="favicon">
+                <p>A collaborative, free and open database of food
+                    products from around the world.</p>
+                <hr>
+                <div class="surce">
+                    <a href="" title="Legal">Legal</a>
+                    <a href="" title="Terms of use">Terms of use</a>
+                    <a href="" title="Mentions légales">Data, API and SDKs</a>
+                    <a href="" title="Mentions légales">Producers</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* Start */
+
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 993px) { 
+
+body {
+    background-color: #9A6536;
+    z-index: 1;
+}
+
+body header {
+    margin-top: 130px;
+    width: 100%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-right: 10%;
+}
+body header img.logo_Toucan {
+    width: 139px;
+    height: 124px;
+    flex-shrink: 0;
+}
+
+body header svg.fond_Logo {
+    position: absolute;
+    width: 187px;
+    height: 109px;
+    flex-shrink: 0;
+}
+}
