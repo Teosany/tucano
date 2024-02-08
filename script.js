@@ -56,26 +56,15 @@ function archive() {
     const nombre = document.getElementById('nbr');
     const eanCode = nombre.value.trim();
     const apiUrl = `https://fr.openfoodfacts.org/api/v0/product/${eanCode}`;
+    fett(apiUrl)
 
-    if (window.location.pathname == 'https://tucano.zeabur.app/') {
-        const nombreTwo = document.getElementById('nbrTwo');
-        const eanCodeTwo = nombreTwo.value.trim();
-        const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
-
-        if (eanCodeTwo.length > 1) {
-            fett(apiUrlTwo)
-        }
-        fett(apiUrl)
-    } else {
-        fett(apiUrl)
-    }
 }
 
-function archive3() {
+function archiveA() {
     const nombreTwo = document.getElementById('nbrTwo');
     const eanCodeTwo = nombreTwo.value.trim();
     const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
-        fett(apiUrlTwo)
+    fett(apiUrlTwo)
 }
 
 function archiveTwo() {
