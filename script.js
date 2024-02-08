@@ -156,7 +156,7 @@ function fett(url) {
         });
 }
 
-if (window.location.pathname == 'https://tucano.zeabur.app/item.html') {
+if (window.location.pathname === 'tucano.zeabur.app/item.html/') {
     console.log('d')
     window.onload = archiveTwo;
 }
