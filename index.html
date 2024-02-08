@@ -81,6 +81,15 @@
             </footer>
         </div>
     </div>
+    <script>
+        function archiveA() {
+            const nombreTwo = document.getElementById('nbrTwo');
+            const eanCodeTwo = nombreTwo.value.trim();
+            const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
+            fett(apiUrlTwo)
+        }
+    </script>
+    }
 </body>
 
 </html>

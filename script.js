@@ -60,12 +60,7 @@ function archive() {
 
 }
 
-function archiveA() {
-    const nombreTwo = document.getElementById('nbrTwo');
-    const eanCodeTwo = nombreTwo.value.trim();
-    const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
-    fett(apiUrlTwo)
-}
+
 
 function archiveTwo() {
     const params = new URLSearchParams(window.location.search);
