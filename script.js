@@ -155,8 +155,3 @@ function fett(url) {
         &image=${encodeURIComponent(data.product.image_front_url)}`;
         });
 }
-
-if (window.location.pathname === 'tucano.zeabur.app/item.html/') {
-    console.log('d')
-    window.onload = archiveTwo;
-}

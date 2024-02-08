@@ -7,7 +7,7 @@
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
     <link rel="chortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -20,13 +20,14 @@
 </head>
 
 <body id="body">
+<script>window.onload = archiveTwo</script>
     <div id="wrapper">
         <div id="content">
             <header class="menu">
                 <a href="index.html"><img src="img/favicon-bw.png" alt="logo" id="logo"></a>
                 <form>
                     <input id="nbr" type="text" placeholder="Enter your EAN-13">
-                    <button id="ean13" type="button" onclick="archive()"></button>
+                    <button id="ean13" type="button" onsubmit="archive()"></button>
                 </form>
                 <p class="error"></p>
                 <img src="img/newsletter.png" alt="logo">
