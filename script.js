@@ -9,7 +9,7 @@ ScrollSmoother.create({
     effects: true
 })
 
-if (window.location.pathname == '/Users/bohdanburkini/DEV/mesProjet/Tucano/index.html' && ScrollTrigger.isTouch !== 1) {
+if (window.location.pathname == 'https://tucano.zeabur.app/' && ScrollTrigger.isTouch !== 1) {
     gsap.fromTo('.main-header', { opacity: 1 }, {
         opacity: 0,
         scrollTrigger: {
@@ -57,7 +57,7 @@ function archive() {
     const eanCode = nombre.value.trim();
     const apiUrl = `https://fr.openfoodfacts.org/api/v0/product/${eanCode}`;
 
-    if (window.location.pathname == '/Users/bohdanburkini/DEV/mesProjet/Tucano/index.html') {
+    if (window.location.pathname == 'https://tucano.zeabur.app/') {
         const nombreTwo = document.getElementById('nbrTwo');
         const eanCodeTwo = nombreTwo.value.trim();
         const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
@@ -156,6 +156,6 @@ function fett(url) {
         });
 }
 
-if (window.location.pathname == '/Users/bohdanburkini/DEV/mesProjet/Tucano/item.html') {
+if (window.location.pathname == 'https://tucano.zeabur.app/item.html') {
     window.onload = archiveTwo;
 }
