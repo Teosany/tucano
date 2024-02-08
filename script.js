@@ -78,7 +78,6 @@ function archive3() {
         fett(apiUrlTwo)
 }
 
-
 function archiveTwo() {
     const params = new URLSearchParams(window.location.search);
     const nutr = params.get('nutrition_grade_fr').trim()
