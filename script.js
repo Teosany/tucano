@@ -10,7 +10,7 @@ ScrollSmoother.create({
 })
 
 if (window.location.pathname == 'https://tucano.zeabur.app/' && ScrollTrigger.isTouch !== 1) {
-    gsap.fromTo('.main-header', { opacity: 1 }, {
+    gsap.fromTo('.main-header', {opacity: 1}, {
         opacity: 0,
         scrollTrigger: {
             trigger: '.menu',
@@ -23,7 +23,7 @@ if (window.location.pathname == 'https://tucano.zeabur.app/' && ScrollTrigger.is
     let itemsL = gsap.utils.toArray('.gallery .left, .gallery .bottom')
 
     itemsL.forEach(item => {
-        gsap.fromTo(item, { x: -100, opacity: 0 }, {
+        gsap.fromTo(item, {x: -100, opacity: 0}, {
             opacity: 1, x: 0,
             scrollTrigger: {
                 trigger: item,
@@ -37,7 +37,7 @@ if (window.location.pathname == 'https://tucano.zeabur.app/' && ScrollTrigger.is
     let itemsR = gsap.utils.toArray('.gallery .right, .gallery .center')
 
     itemsR.forEach(item => {
-        gsap.fromTo(item, { x: 50, opacity: 0 }, {
+        gsap.fromTo(item, {x: 50, opacity: 0}, {
             opacity: 1, x: 0,
             scrollTrigger: {
                 trigger: item,
@@ -70,6 +70,14 @@ function archive() {
         fett(apiUrl)
     }
 }
+
+function archive3() {
+    const nombreTwo = document.getElementById('nbrTwo');
+    const eanCodeTwo = nombreTwo.value.trim();
+    const apiUrlTwo = `https://fr.openfoodfacts.org/api/v0/product/${eanCodeTwo}`;
+        fett(apiUrlTwo)
+}
+
 
 function archiveTwo() {
     const params = new URLSearchParams(window.location.search);
